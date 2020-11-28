@@ -2,6 +2,9 @@
 # vscode
 .vscode
 
+# environment
+/.env
+
 # dependencies
 /node_modules
 /.pnp

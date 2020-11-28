@@ -1,10 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import LoginButton from './LoginButton'
+import LogoutButton from './LogoutButton'
+import Profile from './Profile'
 
 function App() {
   return (
     <div className="App">
+      <LoginButton />
+      <LogoutButton />
+      <Profile />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,7 +26,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
