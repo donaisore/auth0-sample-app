@@ -1,9 +1,9 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import LoginButton from './LoginButton'
-import LogoutButton from './LogoutButton'
-import Profile from './Profile'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
+import Profile from './Profile';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         </a>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
