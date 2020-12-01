@@ -1,10 +1,10 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import LoginButton from './LoginButton'
-import LogoutButton from './LogoutButton'
-import Profile from './Profile'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
+import Profile from './Profile';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
 const Home: React.FC = () => {
@@ -58,15 +58,15 @@ const Home: React.FC = () => {
         </a>
       </header>
     </div>
-  )
-}
+  );
+};
 
 const Foo: React.FC = () => {
-  return <div>Fooページ</div>
-}
+  return <div>Fooページ</div>;
+};
 
 const Bar: React.FC = () => {
-  return <div>Barページ</div>
-}
+  return <div>Barページ</div>;
+};
 
-export default App
+export default App;
