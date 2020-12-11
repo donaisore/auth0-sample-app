@@ -1,31 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from 'pages/home/Home';
+
 import './App.css';
-import LoginButton from './LoginButton';
-import LogoutButton from './LogoutButton';
-import Profile from './Profile';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {ToDoList} from 'pages/ToDo/ToDoList';
 
 function App() {
   return (
-    <div className="App">
-      <LoginButton />
-      <LogoutButton />
-      <Profile />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Link to="/todos">ToDoList</Link>
+      <Switch>
+        <Route path="/todos" exact>
+          <ToDoList />
+        </Route>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
