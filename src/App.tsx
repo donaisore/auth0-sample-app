@@ -8,19 +8,19 @@ import {ToDoList} from 'pages/ToDo/ToDoList';
 function App() {
   return (
     <Router>
-      <li>
+      {/* <li>
         <ul>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </ul>
         <ul>
           <Link to="/todos">ToDoList</Link>
         </ul>
-      </li>
+      </li> */}
       <Switch>
         <Route path="/todos" exact>
           <ToDoList />
         </Route>
-        <Route path="/home" exact>
+        <Route path="/" exact>
           <Home />
         </Route>
       </Switch>
